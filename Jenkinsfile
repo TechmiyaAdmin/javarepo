@@ -7,13 +7,13 @@ pipeline {
 		git 'https://github.com/TechmiyaAdmin/javarepo.git'
             }
 	}
-	stgae ('deploy'){
-	    steps{
+	stage ('deploy') {
+	    steps {
 		echo "deploy"
             }
 	}
-	stage ('test'){
-	    steps{
+	stage ('test') {
+	    steps {
 		echo "test"	       
             }
 	}
