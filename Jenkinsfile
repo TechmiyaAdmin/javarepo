@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'build started'
-		git 'https://github.com/TechmiyaAdmin/javarepo.git'
+		git branch: 'main', url: 'https://github.com/TechmiyaAdmin/javarepo.git'
             }
 	}
 	stage('deploy') {
